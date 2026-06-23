@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Hold Audit | Angie Marie Global</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sand:#EFEAE0; --sand2:#E0DACB; --terra:#2A3D5C; --terrad:#1B2A42;
+    --gold:#B79A5E; --goldb:#DAC089; --ink:#232A33; --soft:#5F6470; --line:#DAD3C4; --cream:#EFEAE0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--sand);color:var(--ink);font-family:'Montserrat',system-ui,sans-serif;font-weight:400;line-height:1.65;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 0 50px;}
+  .hero-img{width:100%;display:block;aspect-ratio:2/1;object-fit:cover;object-position:50% 22%;}
+  .hero{position:relative;width:100%;aspect-ratio:2/1;background:var(--terra);overflow:hidden;display:flex;align-items:flex-end;}
+  .hero .marks{position:absolute;font-family:'Forum',serif;color:var(--goldb);opacity:.14;font-size:17vw;line-height:.8;top:6%;left:-2%;letter-spacing:.02em;white-space:nowrap;}
+  .hero .marks.two{top:44%;left:6%;opacity:.09;}
+  .hero-inner{position:relative;padding:26px;z-index:2;}
+  .hero .eyebrow.light{color:var(--cream);opacity:.9;}
+  .hero-title{font-family:'Forum',serif;color:var(--cream);font-size:2.6rem;line-height:1;margin-top:8px;}
+  .pad{padding:0 26px;}
+  h1{font-family:'Forum',Georgia,serif;font-weight:400;color:var(--terra);font-size:2.4rem;line-height:1.08;margin:30px 0 14px;}
+  h2{font-family:'Forum',serif;font-weight:400;color:var(--terra);font-size:1.6rem;margin:6px 0 12px;}
+  .eyebrow{font-weight:600;letter-spacing:.26em;text-transform:uppercase;font-size:.72rem;color:var(--gold);margin-top:30px;}
+  p{color:var(--soft);margin-bottom:14px;font-size:1.02rem;}
+  p.ink{color:var(--ink);}
+  .lede{font-style:italic;font-family:'Forum',serif;font-size:1.25rem;color:var(--terra);margin:16px 0;}
+  .howbox{background:var(--sand2);border-left:3px solid var(--gold);padding:18px 20px;margin:22px 0 8px;border-radius:4px;}
+  .howbox .scale-key{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;}
+  .howbox .scale-key span{font-size:.92rem;color:var(--soft);}
+  .howbox .scale-key b{font-family:'Forum',serif;color:var(--gold);font-size:1.2rem;margin-right:5px;}
+  .q{display:flex;align-items:center;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);flex-wrap:wrap;}
+  .qnum{font-family:'Forum',serif;color:var(--gold);font-size:1.3rem;width:24px;flex:0 0 24px;}
+  .qtext{flex:1;min-width:200px;font-size:1rem;color:var(--ink);}
+  .scale{display:flex;gap:8px;margin-left:38px;}
+  .opt{width:42px;height:42px;border:1.5px solid var(--terra);background:transparent;color:var(--terra);
+        font-family:'Forum',serif;font-size:1.15rem;border-radius:8px;cursor:pointer;transition:.15s;}
+  .opt:hover{background:rgba(0,0,0,.05);}
+  .opt.sel{background:var(--terra);color:var(--cream);border-color:var(--terra);}
+  .totalcard{background:var(--terra);color:var(--cream);border-radius:8px;padding:22px 26px;margin:26px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:14px;}
+  .totalcard .tc-lbl{font-family:'Forum',serif;font-size:1.35rem;}
+  .totalcard .tc-num{font-family:'Forum',serif;font-size:2.2rem;color:var(--goldb);white-space:nowrap;}
+  .result{display:none;margin-top:30px;}
+  .result.show{display:block;animation:fade .5s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+  .band{border-left:3px solid var(--gold);padding:4px 0 4px 20px;margin:8px 0 26px;}
+  .band .rng{font-weight:600;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--gold);}
+  .band h2{margin:6px 0 10px;}
+  .panel{background:var(--terra);color:var(--cream);border-radius:6px;padding:26px;margin:24px 0;}
+  .panel.gold-frame{border:1px solid var(--gold);}
+  .panel h2,.panel p{color:var(--cream);}
+  .saysit{font-family:'Forum',serif;font-style:italic;font-size:1.55rem;color:var(--goldb);text-align:center;margin:18px 0;line-height:1.35;}
+  .cta{display:inline-block;background:var(--gold);color:var(--terrad);font-weight:600;text-decoration:none;
+    padding:16px 34px;border-radius:8px;font-size:1.02rem;letter-spacing:.02em;margin-top:8px;}
+  .cta:hover{opacity:.92;}
+  .signoff{font-family:'Forum',serif;color:var(--terra);font-size:1.2rem;margin-top:30px;}
+  .ps{font-family:'Forum',serif;font-style:italic;color:var(--soft);margin-top:4px;}
+  .hint{font-size:.9rem;color:var(--soft);font-style:italic;margin-top:10px;}
+  footer{text-align:center;color:var(--gold);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;margin-top:40px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+      <div class="marks">hold</div>
+      <div class="marks two">hold</div>
+      <div class="hero-inner">
+        <div class="eyebrow light">Angie Marie Global</div>
+        <div class="hero-title">The Hold Audit</div>
+      </div>
+    </div>
+  <div class="pad">
+    <div class="eyebrow">Angie Marie Global</div>
+    <h1>The Hold Audit</h1>
+    <p class="ink" style="font-size:1.12rem;">A 10-minute mirror that shows you where you hold everyone, and let no one hold you.</p>
+
+    <div class="eyebrow">Before you begin</div>
+    <p>You have carried it alone for a long time. The decision, the room, the household, the weight of being the one everyone leans on. You are the strong one, the one who holds it together so well that no one thinks to ask who holds you. And somewhere, holding yourself up started to feel safer than being held.</p>
+    <p class="lede">Who holds you, while you hold everyone else.</p>
+    <p>You have called it independence. Not wanting to be a burden. It is none of those. It is a weight, and you were never meant to carry it alone. This is not a test. It is a mirror.</p>
+
+    <div class="howbox">
+      <div class="eyebrow" style="margin-top:0;">How to score</div>
+      <div class="scale-key">
+        <span><b>0</b>rarely true</span><span><b>1</b>sometimes true</span><span><b>2</b>often true</span><span><b>3</b>almost always</span>
+      </div>
+    </div>
+
+    <div class="eyebrow">The twelve</div>
+    <div id="questions">
+    <div class="q" data-i="0">
+      <div class="qnum">1</div>
+      <div class="qtext">I carry the weight of things alone, even when help is offered.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="1">
+      <div class="qnum">2</div>
+      <div class="qtext">I am the one everyone leans on, and I lean on no one.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="2">
+      <div class="qnum">3</div>
+      <div class="qtext">I brace to receive, as if the support might be taken back.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="3">
+      <div class="qnum">4</div>
+      <div class="qtext">I keep holding the room together long after I am exhausted.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="4">
+      <div class="qnum">5</div>
+      <div class="qtext">I struggle to let someone do something for me without earning or repaying it.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="5">
+      <div class="qnum">6</div>
+      <div class="qtext">I downplay how much I am carrying so no one worries.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="6">
+      <div class="qnum">7</div>
+      <div class="qtext">I keep one hand on everything, unable to fully let go.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="7">
+      <div class="qnum">8</div>
+      <div class="qtext">I feel safer holding myself up than being held by anyone.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="8">
+      <div class="qnum">9</div>
+      <div class="qtext">I cannot rest until I know everything is handled.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="9">
+      <div class="qnum">10</div>
+      <div class="qtext">I deflect care the moment it comes toward me.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="10">
+      <div class="qnum">11</div>
+      <div class="qtext">I trust myself to hold others far more than I trust being held.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="11">
+      <div class="qnum">12</div>
+      <div class="qtext">I am the strong one, and I do not know how to put the weight down.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    </div>
+
+    <div class="totalcard">
+      <div class="tc-lbl">Your total</div>
+      <div class="tc-num"><span id="totalNum">0</span> / 36</div>
+    </div>
+    <p class="hint">Answer all twelve and your result appears below.</p>
+
+    <div class="result" id="result">
+      <div class="eyebrow">What your number is showing you</div>
+      <h2>This is not a grade. It is how alone you have been holding it.</h2>
+      <div class="band">
+        <div class="rng" id="bandRange"></div>
+        <h2 id="bandName"></h2>
+        <p id="bandBody"></p>
+      </div>
+
+      <div class="eyebrow">The 90 second hold</div>
+      <p>Hand on chest. Both feet on the floor. Feel the chair, or the ground, holding all of your weight. It is holding you right now, and you are not holding it. Bring to mind the weight you carry, and just for ninety seconds, let something else hold it. Do not pick it back up.</p>
+      <div class="saysit">I do not have to hold it all.<br>I am allowed to be held.</div>
+      <p>Feel the part of you that braces, that reaches to take the weight back. That bracing is the cost. Let your shoulders come down by one inch. The floor was always going to hold you. You were just never taught to let it.</p>
+
+      <div class="panel gold-frame">
+        <h2>The doorway</h2>
+        <p>Most people will read this, feel the recognition, and pick the weight straight back up by morning. You do not have to be most people.</p>
+        <p>Hold is seventeen days where you stop holding yourself up and are held. The floor rises to meet you, the room holds you while the new baseline locks in at depth. You do not hold the baseline here. You let the baseline hold you.</p>
+        <a class="cta" href="https://angiemarieglobal.com/hold" target="_blank" rel="noopener">Let yourself be held</a>
+      </div>
+
+      <div class="signoff">I love you, Angie x</div>
+      <div class="ps">P.S. Remember, abundance is your baseline.</div>
+    </div>
+    <footer>Abundance is your baseline</footer>
+  </div>
+</div>
+<script>
+  const answers = new Array(12).fill(null);
+  const qEls = document.querySelectorAll('.q');
+  const totalNum = document.getElementById('totalNum');
+  const result = document.getElementById('result');
+  const bands = [
+    {min:0,max:9,range:'0 to 9',name:"The Held",body:"You let yourself be held more than most. The work now is the few places you still grip. Even at this range, notice where your number landed. That is the last of the weight, asking to be set down."},
+    {min:10,max:18,range:'10 to 18',name:"The Quiet Grip",body:"You let support in, mostly, but one hand stays on everything. You can be held, as long as you are still partly holding. The invitation is to take that last hand off and find the floor was already there."},
+    {min:19,max:27,range:'19 to 27',name:"The Lone Holder",body:"You hold the room, and you are held by no one. The weight is yours alone, by habit now, not by necessity. You have called it strength. It is costing you the rest, the softness, and the support that has been available the whole time."},
+    {min:28,max:36,range:'28 to 36',name:"The Weight Carried Alone",body:"You have held everyone for so long that putting it down feels unsafe. It is not strength anymore. It is a load that was never meant to be carried by one person, and the bracing has become so constant you stopped feeling it. You are allowed to be held."}
+  ];
+  function recompute(){
+    let sum=0, answered=0;
+    answers.forEach(v => { if(v!==null){ sum+=v; answered++; } });
+    totalNum.textContent = sum;
+    if(answered===12){
+      const b = bands.find(x => sum>=x.min && sum<=x.max);
+      document.getElementById('bandRange').textContent=b.range;
+      document.getElementById('bandName').textContent=b.name;
+      document.getElementById('bandBody').textContent=b.body;
+      result.classList.add('show');
+      if(!result.dataset.seen){ result.dataset.seen=1; result.scrollIntoView({behavior:'smooth',block:'start'}); }
+    }
+  }
+  qEls.forEach(q => {
+    const i = parseInt(q.dataset.i,10);
+    q.querySelectorAll('.opt').forEach(btn => {
+      btn.addEventListener('click', () => {
+        q.querySelectorAll('.opt').forEach(b=>b.classList.remove('sel'));
+        btn.classList.add('sel');
+        answers[i]=parseInt(btn.dataset.v,10);
+        recompute();
+      });
+    });
+  });
+</script>
+</body>
+</html>
